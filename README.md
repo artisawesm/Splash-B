@@ -1,1 +1,3 @@
-# Splash-B
+# Splash Page
+
+🐠 use splash!
