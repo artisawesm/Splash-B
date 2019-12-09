@@ -1,93 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-154272431-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <title>Initializr</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0" />
-  <meta name="description" content="An automation tool for creating single page applications." />
-  <meta name="keywords" content="automation, js, scss, react, SEO, webpack, gulp, vue, artisawesm" />
-  <meta name="author" content="Art San Diego | asd.artsandiego@gmail.com" />
+      gtag('config', 'UA-154272431-1');
+    </script>
 
-  <!-- fb open graph -->
-  <meta property="og:title" content="Initializr | And yet another automation tool" />
-  <meta property="og:image" content="https://artisawesm.com/assets/images/splash.JPG" />
-  <meta property="og:site_name" content="Artisawesm" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Front End Web Developer | Aspiring Graphic Designer | UX Enthusiast | Cats | Coffee " />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Initializr</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"
+    />
+    <meta
+      name="description"
+      content="An automation tool for creating single page applications."
+    />
+    <meta
+      name="keywords"
+      content="automation, js, scss, react, SEO, webpack, gulp, vue, artisawesm"
+    />
+    <meta name="author" content="Art San Diego | asd.artsandiego@gmail.com" />
 
-  <!-- twitter card tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Artisawesm" />
-  <meta name="twitter:description" content="Front End Web Developer | Aspiring Graphic Designer | UX Enthusiast | Cats | Coffee " />
-  <meta name="twitter:image" content="https://artisawesm.com/assets/images/splash.JPG" />
-  <meta name="twitter:creator" content="@artisawesm" />
-  <meta name="twitter:site" content="@artisawesm" />
+    <!-- fb open graph -->
+    <meta
+      property="og:title"
+      content="Initializr | And yet another automation tool"
+    />
+    <meta
+      property="og:image"
+      content="https://artisawesm.com/assets/images/splash.JPG"
+    />
+    <meta property="og:site_name" content="Artisawesm" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Front End Web Developer | Aspiring Graphic Designer | UX Enthusiast | Cats | Coffee "
+    />
 
-  <!-- SEO -->
-  <meta name="robots" content="follow" />
-  <link rel="canonical" href="https://www.artisawesm.com" />
+    <!-- twitter card tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Artisawesm" />
+    <meta
+      name="twitter:description"
+      content="Front End Web Developer | Aspiring Graphic Designer | UX Enthusiast | Cats | Coffee "
+    />
+    <meta
+      name="twitter:image"
+      content="https://artisawesm.com/assets/images/splash.JPG"
+    />
+    <meta name="twitter:creator" content="@artisawesm" />
+    <meta name="twitter:site" content="@artisawesm" />
 
-  <!-- Main css file // Bootstrap 4 -->
-  <link rel="stylesheet" href="./assets/css/app.min.css" type="text/css" />
+    <!-- SEO -->
+    <meta name="robots" content="follow" />
+    <link rel="canonical" href="https://www.artisawesm.com" />
 
-  <!-- Cookie -->
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-  <script>
-    window.addEventListener("load", function () {
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#1e1e1e",
-            "text": "#ffffff"
+    <!-- Main css file // Bootstrap 4 -->
+    <link rel="stylesheet" href="./assets/css/app.min.css" type="text/css" />
+
+    <!-- Cookie -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: '#1e1e1e',
+              text: '#ffffff',
+            },
+            button: {
+              background: '#ffffff',
+              text: '#1e1e1e',
+            },
           },
-          "button": {
-            "background": "#ffffff",
-            "text": "#1e1e1e"
-          }
-        },
-        "showLink": false,
-        "theme": "edgeless",
-        "position": "bottom-right",
-        "content": {
-          "dismiss": "Got it!"
-        }
-      })
-    });
-  </script>
-</head>
+          showLink: false,
+          theme: 'edgeless',
+          position: 'bottom-right',
+          content: {
+            dismiss: 'Got it!',
+          },
+        });
+      });
+    </script>
+  </head>
 
-<body>
-  <div class="init dark">
-    <div id="particles-js"></div>
-    <img id="toggle" class="branding" src="./assets/images/branding.png" alt="" />
-    <div class="title">
-      <div id="header" class="header"></div>
-      <div id="links" class="links">
+  <body>
+    <div class="init dark">
+      <div id="particles-js"></div>
+      <img
+        id="toggle"
+        class="branding"
+        src="./assets/images/branding.png"
+        alt=""
+      />
+      <div class="title">
+        <div id="header" class="header"></div>
+        <div id="links" class="links"></div>
       </div>
     </div>
-  </div>
 
-  <!-- Particles JS -->
-  <script type="text/javascript" src="./assets/vendor/particles.js"></script>
+    <!-- Particles JS -->
+    <script type="text/javascript" src="./assets/vendor/particles.js"></script>
 
-  <!-- Main js file // With jQuery and Bootstrap.js(4) -->
-  <script type="text/javascript" src="./assets/js/app.min.js"></script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93049647-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-93049647-1');
-  </script>
-
-</body>
-
+    <!-- Main js file // With jQuery and Bootstrap.js(4) -->
+    <script type="text/javascript" src="./assets/js/app.min.js"></script>
+  </body>
 </html>
